@@ -89,20 +89,23 @@ npx expo start
 | **TypeScript** | Tipagem completa em todo o projeto |
 
 ## 📁 Estrutura do projeto
+
+```
 app/
-(tabs)/
-index.tsx       # Aba Pokédex
-map.tsx         # Aba Mapa
-favorites.tsx   # Aba Favoritos
-pokemon/
-[id].tsx        # Tela de detalhe
+  (tabs)/
+    index.tsx       # Aba Pokédex
+    map.tsx         # Aba Mapa
+    favorites.tsx   # Aba Favoritos
+  pokemon/
+    [id].tsx        # Tela de detalhe
 components/ui/      # Componentes visuais reutilizáveis
-constants/          # Estilos dos tipos de Pokémon
-hooks/              # Hooks customizados
+constants/          # Estilos e cores dos tipos de Pokémon
+hooks/              # Hooks customizados (usePokemon, useFavorites)
 services/           # Chamadas à PokeAPI
-store/              # Estado global (Zustand)
+store/              # Estado global com Zustand
 types/              # Tipagem TypeScript
 utils/              # Funções utilitárias
+```
 
 ## ✨ Extras implementados
 
